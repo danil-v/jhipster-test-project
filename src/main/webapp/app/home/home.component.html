@@ -1,0 +1,1362 @@
+<div class="row">
+    <div class="col-md-3">
+        <span class="hipster img-fluid rounded"></span>
+    </div>
+    <div class="col-md-9">
+
+        <formio [form]='{
+    "type": "form",
+    "tags": [
+        "common",
+        "info"
+    ],
+    "access": [
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939828",
+                "5a82ed0395d7d02f30939829",
+                "5a82ed0395d7d02f3093982a"
+            ],
+            "type": "read_all"
+        }
+    ],
+    "submissionAccess": [
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "create_own"
+        },
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "read_own"
+        },
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "update_own"
+        },
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "delete_own"
+        }
+    ],
+    "owner": "5a82ed4095d7d02f30939836",
+    "components": [
+        {
+            "clearOnHide": false,
+            "input": false,
+            "key": "table",
+            "numRows": 3,
+            "numCols": 2,
+            "rows": [
+                [
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "text",
+                                "inputMask": "",
+                                "label": "Фамилия:",
+                                "key": "table2",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": true,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "custom": "",
+                                    "customPrivate": false
+                                },
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "type": "textfield",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "properties": {
+                                    "": ""
+                                },
+                                "isNew": false
+                            }
+                        ]
+                    },
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "number",
+                                "label": "СНИЛС:",
+                                "key": "table5",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "defaultValue": "",
+                                "protected": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": false,
+                                    "min": "",
+                                    "max": "",
+                                    "step": "any",
+                                    "integer": "",
+                                    "multiple": "",
+                                    "custom": ""
+                                },
+                                "type": "number",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "text",
+                                "inputMask": "",
+                                "label": "Имя:",
+                                "key": "table3",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": true,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "custom": "",
+                                    "customPrivate": false
+                                },
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "type": "textfield",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "tel",
+                                "inputMask": "(999) 999-9999",
+                                "label": "Контактный телефон:",
+                                "key": "table6",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "defaultValue": "",
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": true,
+                                    "customMessage": "Необходимо заполнить"
+                                },
+                                "type": "phoneNumber",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "text",
+                                "inputMask": "",
+                                "label": "Отчество:",
+                                "key": "table4",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": false,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "custom": "",
+                                    "customPrivate": false
+                                },
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "type": "textfield",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "email",
+                                "label": "Адрес электронной почты:",
+                                "key": "table7",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "kickbox": {
+                                    "enabled": false
+                                },
+                                "type": "email",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "properties": {
+                                    "": ""
+                                },
+                                "validate": {
+                                    "customMessage": "Необходимо заполнить"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "header": [],
+            "caption": "",
+            "striped": false,
+            "bordered": false,
+            "hover": false,
+            "condensed": true,
+            "tableView": false,
+            "type": "table",
+            "hideLabel": false,
+            "tags": [],
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "properties": {
+                "": ""
+            }
+        },
+        {
+            "input": true,
+            "label": "Следующий шаг",
+            "tableView": false,
+            "key": "submit",
+            "size": "md",
+            "leftIcon": "fa fa-plus",
+            "rightIcon": "",
+            "block": false,
+            "action": "submit",
+            "disableOnInvalid": false,
+            "theme": "primary",
+            "type": "button",
+            "hideLabel": false,
+            "tags": [],
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "properties": {
+                "": ""
+            },
+            "style": {
+                "margin-left": "775px"
+            }
+        }
+    ],
+    "created": "2018-02-14T05:43:09.148Z",
+    "_id": "5a83cc6d40a1bc38b4d97a2b",
+    "display": "form",
+    "title": "info",
+    "name": "info",
+    "path": "info",
+    "modified": "2018-02-14T07:41:51.262Z",
+    "machineName": "info"
+}'></formio>
+
+       <!--<formio [form]='{
+    "title": "My Test Form",
+    "components": [
+        {
+            "type": "textfield",
+            "input": true,
+            "tableView": true,
+            "inputType": "text",
+            "inputMask": "",
+            "label": "First Name",
+            "key": "firstName",
+            "placeholder": "Enter your first name",
+            "prefix": "",
+            "suffix": "",
+            "multiple": false,
+            "defaultValue": "",
+            "protected": false,
+            "unique": false,
+            "persistent": true,
+            "validate": {
+                "required": true,
+                "minLength": 2,
+                "maxLength": 10,
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            }
+        },
+        {
+            "type": "textfield",
+            "input": true,
+            "tableView": true,
+            "inputType": "text",
+            "inputMask": "",
+            "label": "Last Name",
+            "key": "lastName",
+            "placeholder": "Enter your last name",
+            "prefix": "",
+            "suffix": "",
+            "multiple": false,
+            "defaultValue": "",
+            "protected": false,
+            "unique": false,
+            "persistent": true,
+            "validate": {
+                "required": true,
+                "minLength": 2,
+                "maxLength": 10,
+                "pattern": "",
+                "custom": "",
+                "customPrivate": false
+            },
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            }
+        },
+        {
+            "input": true,
+            "label": "Submit",
+            "tableView": false,
+            "key": "submit",
+            "size": "md",
+            "leftIcon": "",
+            "rightIcon": "",
+            "block": false,
+            "action": "submit",
+            "disableOnInvalid": true,
+            "theme": "primary",
+            "type": "button"
+        }
+    ]
+}' [url]="'http://localhost:8080/api/users/formio'"></formio>-->
+
+        <formio [form]='{"type":"form","tags":[],"access":[{"roles":["579814a4ff9b236800b09b23","579814a4ff9b236800b09b24","579814a5ff9b236800b09b25","579f879d5b7a477b0026f821"],"type":"read_all"}],"submissionAccess":[],"owner":"553dbfc08d22d5cb1a7024f2","components":[{"conditional":{"eq":"","when":null,"show":""},"type":"columns","columns":[{"components":[{"isNew":false,"type":"textfield","conditional":{"eq":"","when":null,"show":""},"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":"","minLength":"","required":false},"persistent":true,"unique":false,"protected":false,"defaultValue":"","multiple":false,"suffix":"","prefix":"","placeholder":"Enter your first name","key":"firstName","label":"First Name","inputMask":"","inputType":"text","tableView":true,"input":true},{"conditional":{"eq":"","when":null,"show":""},"type":"email","persistent":true,"unique":false,"protected":false,"defaultValue":"","suffix":"","prefix":"","placeholder":"Enter your email address","key":"email","label":"Email","inputType":"email","tableView":true,"input":true}]},{"components":[{"type":"textfield","conditional":{"eq":"","when":"","show":""},"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":"","minLength":"","required":false},"persistent":true,"unique":false,"protected":false,"defaultValue":"","multiple":false,"suffix":"","prefix":"","placeholder":"Enter your last name","key":"lastName","label":"Last Name","inputMask":"","inputType":"text","tableView":true,"input":true},{"lockKey":true,"conditional":{"eq":"","when":null,"show":""},"type":"checkbox","validate":{"required":false},"persistent":true,"protected":false,"defaultValue":false,"key":"havePhoneNumber","label":"Do you have a phone number?","hideLabel":true,"tableView":true,"inputType":"checkbox","input":true},{"conditional":{"eq":"true","when":"havePhoneNumber","show":"true"},"type":"phoneNumber","validate":{"required":false},"defaultValue":"","persistent":true,"unique":false,"protected":false,"multiple":false,"suffix":"","prefix":"","placeholder":"","key":"phoneNumber","label":"Phone Number","inputMask":"(999) 999-9999","tableView":true,"input":true}]}],"input":false},{"type":"textfield","conditional":{"eq":"","when":null,"show":""},"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":"","minLength":"","required":false},"persistent":true,"unique":false,"protected":false,"defaultValue":"","multiple":true,"suffix":"","prefix":"","placeholder":"Enter your kids names","key":"kids","label":"Kids","inputMask":"","inputType":"text","tableView":true,"input":true},{"conditional":{"eq":"","when":null,"show":""},"type":"datagrid","persistent":true,"protected":false,"key":"cars","label":"Cars","tableView":true,"components":[{"hideLabel":true,"type":"textfield","conditional":{"eq":"","when":null,"show":""},"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":"","minLength":"","required":false},"persistent":true,"unique":false,"protected":false,"defaultValue":"","multiple":false,"suffix":"","prefix":"","placeholder":"","key":"make","label":"Make","inputMask":"","inputType":"text","tableView":true,"input":true},{"hideLabel":true,"type":"textfield","conditional":{"eq":"","when":null,"show":""},"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":"","minLength":"","required":false},"persistent":true,"unique":false,"protected":false,"defaultValue":"","multiple":false,"suffix":"","prefix":"","placeholder":"","key":"model","label":"Model","inputMask":"","inputType":"text","tableView":true,"input":true},{"hideLabel":true,"type":"textfield","conditional":{"eq":"","when":null,"show":""},"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":"","minLength":"","required":false},"persistent":true,"unique":false,"protected":false,"defaultValue":"","multiple":false,"suffix":"","prefix":"","placeholder":"","key":"year","label":"Year","inputMask":"","inputType":"text","tableView":true,"input":true}],"tree":true,"input":true},{"type":"button","theme":"primary","disableOnInvalid":true,"action":"submit","block":false,"rightIcon":"","leftIcon":"","size":"md","key":"submit","tableView":false,"label":"Submit","input":true}],"created":"2016-07-27T01:57:52.976Z","revisions":"","_vid":0,"_id":"57981520ff9b236800b09b31","machineName":"pjmfogrfqptslvi:testForm","modified":"2016-08-09T02:10:03.990Z","title":"Test Form","display":"form","name":"testForm","path":"test","project":"579814a4ff9b236800b09b22"}'></formio>
+
+        <formio [form]='{"_id":"59ea074225c87f0009ad6391","machineName":"int-crds:automationTest","modified":"2017-11-06T14:13:51.914Z","title":"Automation Test","name":"automationTest","path":"automationtest","display":"form","project":"59e60fc225c87f0009ad4ba7","created":"2017-10-20T14:25:06.409Z","components":[{"clearOnHide":false,"type":"panel","title":"Automation Test Form","input":false,"key":"automationTestForm","theme":"default","tableView":false,"breadcrumb":"none","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{},"lockKey":true,"components":[{"clearOnHide":false,"input":false,"tableView":false,"key":"columns","type":"columns","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{},"columns":[{"components":[{"lockKey":true,"tabindex":"1","input":true,"tableView":true,"inputType":"text","inputMask":"","label":"First Name","key":"firstName","placeholder":"Enter First Name","prefix":"","suffix":"","multiple":false,"defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":35,"minLength":"","required":true},"conditional":{"eq":"","when":null,"show":""},"type":"textfield","tags":[],"properties":{"data_field":"First_Name","data_table":"Contacts"},"hideLabel":false},{"tabindex":"3","input":true,"tableView":true,"inputType":"text","inputMask":"","label":"Last Name","key":"lastName","placeholder":"Enter Last Name","prefix":"","suffix":"","multiple":false,"defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":35,"minLength":"","required":true},"conditional":{"eq":"","when":null,"show":""},"type":"textfield","tags":[],"properties":{"data_field":"Last_Name","data_table":"Contacts"},"lockKey":true,"hideLabel":false},{"input":true,"tableView":true,"inputType":"text","inputMask":"","label":"Nickname","key":"nickname","placeholder":"Enter Nickname","prefix":"","suffix":"","multiple":false,"defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":35,"minLength":"","required":false},"conditional":{"eq":"","when":null,"show":""},"type":"textfield","tags":[],"properties":{"data_field":"Nickname","data_table":"Contacts"},"tabindex":"5","lockKey":true,"hideLabel":false},{"isNew":false,"inputType":"tel","input":true,"tableView":true,"inputMask":"(999) 999-9999","label":"Mobile Phone Number","key":"phoneNumber","placeholder":"Enter Mobile Phone Number","prefix":"","suffix":"","multiple":false,"protected":false,"unique":false,"persistent":true,"hidden":false,"defaultValue":"","clearOnHide":true,"validate":{"required":false},"type":"phoneNumber","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{"data_field":"Mobile_Phone","data_table":"Contacts"},"tabindex":"7","lockKey":true,"hideLabel":false},{"input":true,"tableView":true,"inputType":"text","inputMask":"99/99/9999","label":"Birthday","key":"columnsBirthday","placeholder":"Enter Birthday","prefix":"","suffix":"","multiple":false,"defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","pattern":"^(0[1-9]|1[012])[- /.](0[1-9]|[12][0-9]|3[01])[- /.](19|20)\\d\\d$","maxLength":11,"minLength":"","required":true},"conditional":{"eq":"","when":null,"show":""},"type":"textfield","tags":["date"],"properties":{"data_field":"Date_of_Birth","data_table":"Contacts"},"lockKey":true,"source":"59820192cb2416000b68fed8","tabindex":"9","hideLabel":false},{"input":true,"tableView":true,"inputType":"radio","label":"Gender","key":"columnsGender","values":[{"label":"","value":""}],"defaultValue":"","protected":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","required":true},"type":"radio","properties":{"data_lookup_table":"Genders","data_lookup_label_field":"Gender","data_lookup_value_field":"Gender_ID","data_table":"Contacts","data_field":"Gender_ID"},"conditional":{"show":"","when":null,"eq":""},"tags":["gender"],"lockKey":true,"source":"59ba7e5bb8371d0007de3511","tabindex":"11","hideLabel":false}],"width":6,"offset":0,"push":0,"pull":0},{"components":[{"input":true,"tableView":true,"inputType":"text","inputMask":"","label":"Maiden Name","key":"maidenName","placeholder":"Enter Maiden Name","prefix":"","suffix":"","multiple":false,"defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":35,"minLength":"","required":false},"conditional":{"eq":"","when":null,"show":""},"type":"textfield","tags":[],"properties":{"Field":"Maiden_Name","Table":"Contacts"},"tabindex":"4","lockKey":true,"hideLabel":false},{"tabindex":"2","input":true,"tableView":true,"inputType":"text","inputMask":"","label":"Middle Name","key":"middleName","placeholder":"Enter Middle Name","prefix":"","suffix":"","multiple":false,"defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"customPrivate":false,"custom":"","pattern":"","maxLength":35,"minLength":"","required":false},"conditional":{"eq":"","when":null,"show":""},"type":"textfield","tags":[],"properties":{"Field":"Middle_Name","Table":"Contacts"},"lockKey":true,"hideLabel":false},{"input":true,"tableView":true,"inputType":"email","label":"Email","key":"email","placeholder":"Enter Email Address","prefix":"","suffix":"","defaultValue":"","protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"kickbox":{"enabled":false},"type":"email","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{"data-field":"Email","data-table":"Contacts"},"validate":{"required":true},"tabindex":"6","lockKey":true,"hideLabel":false},{"lockKey":true,"input":true,"tableView":true,"label":"Marital Status","key":"maritalStatus","placeholder":"Please select one","data":{"custom":"","resource":"","url":"","json":"","values":[{"label":"","value":""}]},"dataSrc":"values","valueProperty":"","defaultValue":"","refreshOn":"","filter":"","authenticate":false,"template":"<span>{item.label}</span>","multiple":false,"protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"required":false},"type":"select","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{"data_field":"Marital_Status_ID","data_table":"Contacts","data_lookup_value_field":"Marital_Status_ID","data_lookup_label_field":"Marital_Status","data_lookup_table":"Marital_Statuses"},"tabindex":"8","disabled":false,"hideLabel":false},{"input":true,"tableView":true,"label":"State","key":"state","placeholder":"Please select one","data":{"custom":"","resource":"","url":"","json":"","values":[{"label":"","value":""}]},"dataSrc":"values","valueProperty":"","defaultValue":"","refreshOn":"","filter":"","authenticate":false,"template":"<span>{item.label}</span>","multiple":false,"protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"required":true},"type":"select","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{"data_lookup_label_field":"State_Abbreviation","data_lookup_value_field":"State_ID","data_lookup_table":"States"},"tabindex":"10","lockKey":true,"hideLabel":false},{"input":true,"tableView":true,"label":"Congregation","key":"congregation","placeholder":"Please select one","data":{"custom":"","resource":"","url":"","json":"","values":[{"label":"1","value":"1"},{"label":"2","value":"2"},{"label":"3","value":"3"},{"label":"4","value":"4"},{"label":"5","value":"5"},{"label":"6","value":"6"},{"label":"7","value":"7"},{"label":"8","value":"8"},{"label":"9","value":"9"},{"label":"10","value":"10"},{"label":"11","value":"11"},{"label":"12","value":"12"},{"label":"13","value":"13"},{"label":"14","value":"14"},{"label":"15","value":"15"},{"label":"","value":""}]},"dataSrc":"values","valueProperty":"","defaultValue":"","refreshOn":"","filter":"","authenticate":false,"template":"<span>{item.label}</span>","multiple":false,"protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"required":false},"type":"select","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{"data_lookup_order_by":"Congregation_Name","data_lookup_table":"Congregations","data_lookup_filter":"Available_Online=1","data_lookup_label_field":"Congregation_Name","data_lookup_value_field":"Congregation_ID"},"tabindex":"12","lockKey":true,"hideLabel":false}],"width":6,"offset":0,"push":0,"pull":0}],"hideLabel":false},{"lockKey":true,"input":true,"label":"Submit","tableView":false,"key":"submit","size":"md","leftIcon":"","rightIcon":"","block":false,"action":"submit","disableOnInvalid":false,"theme":"primary","type":"button","tags":[],"conditional":{"eq":"","when":null,"show":""},"properties":{},"hideLabel":false}],"hideLabel":false}],"owner":null,"submissionAccess":[{"type":"create_all","roles":[]},{"type":"read_all","roles":[]},{"type":"update_all","roles":[]},{"type":"delete_all","roles":[]},{"type":"create_own","roles":[]},{"type":"read_own","roles":[]},{"type":"update_own","roles":[]},{"type":"delete_own","roles":[]},{"type":"team_read","roles":[]},{"type":"team_write","roles":[]},{"type":"team_admin","roles":[]}],"access":[{"type":"read_all","roles":["59e60fc325c87f0009ad4ba8","59e60fc325c87f0009ad4ba9","59e60fc325c87f0009ad4baa","59e60fc325c87f0009ad4bab"]}],"tags":[],"type":"form"}'></formio>
+
+        <formio [form]='{"type":"form","tags":[],"access":[{"roles":["5a74390e25671b0001305aaa","5a74390f25671b0001305aab","5a74390f25671b0001305aac"],"type":"read_all"}],"submissionAccess":[],"owner":"5a743823f7486a000189184e","components":[{"input":true,"tableView":true,"label":"Тип формы","key":"selectfr","placeholder":"Тип формы","data":{"values":[{"value":"1","label":"выбор"},{"value":"2","label":"валидация"},{"value":"3","label":"поиск"}],"json":"","url":"","resource":"","custom":""},"dataSrc":"values","valueProperty":"","defaultValue":"","refreshOn":"","filter":"","authenticate":false,"template":"<span>{item.label}</span>","multiple":false,"protected":false,"unique":false,"persistent":true,"hidden":false,"clearOnHide":true,"validate":{"required":false},"type":"select","hideLabel":false,"labelPosition":"left-right","tags":[],"conditional":{"show":"","when":null,"eq":""},"properties":{},"labelWidth":30,"labelMargin":3,"lockKey":true},{"input":true,"label":"Submit","tableView":false,"key":"submit","size":"md","leftIcon":"","rightIcon":"","block":false,"action":"submit","disableOnInvalid":false,"theme":"primary","type":"button","hideLabel":false}],"created":"2018-02-05T08:10:06.242Z","revisions":"","_vid":0,"_id":"5a78115e87f12800018e2f21","title":"SelectFr","display":"form","settings":{},"name":"selectFr","path":"selectfr","project":"5a74390e25671b0001305aa9","modified":"2018-02-05T08:15:31.830Z","machineName":"gntvmnxujhztlry:selectFr"}'></formio>
+
+        <formio [form]='{ "components": [ { "type": "panel", "title": "Page 1", "components": [ { "input": true, "tableView": true, "inputType": "radio", "label": "Radio Component", "key": "radioComponent", "values": [ { "value": "one", "label": "one" }, { "value": "two", "label": "two" }, { "value": "three", "label": "three" } ], "defaultValue": "", "protected": false, "persistent": true, "hidden": false, "clearOnHide": true, "validate": { "required": false, "custom": "", "customPrivate": false }, "type": "radio", "tags": [], "conditional": { "show": "", "when": null, "eq": "" } }, { "input": true, "inputType": "checkbox", "tableView": true, "hideLabel": true, "label": "Check Box Component", "datagridLabel": true, "key": "checkBoxComponent", "defaultValue": false, "protected": false, "persistent": true, "hidden": false, "name": "", "value": "", "clearOnHide": true, "validate": { "required": false }, "type": "checkbox", "tags": [], "conditional": { "show": "", "when": null, "eq": "" } } ], "input": false, "key": "page1", "theme": "default" }, { "type": "panel", "title": "Page 2", "isNew": true, "components": [ { "input": true, "tableView": true, "label": "Select Boxes Component", "key": "selectBoxesComponent", "values": [ { "value": "option1", "label": "Option 1" }, { "value": "option2", "label": "Option 2" }, { "value": "option3", "label": "Option 3" } ], "inline": false, "protected": false, "persistent": true, "hidden": false, "clearOnHide": true, "validate": { "required": false }, "type": "selectboxes", "conditional": { "show": "", "when": null, "eq": "" } } ], "input": false, "key": "page2", "theme": "default" } ], "display": "wizard", "page": 1, "numPages": 2 }'></formio>
+
+        <formio [form]='{
+    "type": "form", "tags": [], "access": [{
+        "roles": ["579814a4ff9b236800b09b23",
+            "579814a4ff9b236800b09b24", "579814a5ff9b236800b09b25", "579f879d5b7a477b0026f821"], "type": "read_all"
+    }],
+    "submissionAccess": [], "owner": "553dbfc08d22d5cb1a7024f2",
+    "components": {
+        "conditional": {"eq": "", "when": null, "show": ""},
+        "type": "columns", "columns": {
+            "components": [{
+                "type": "textfield",
+                "conditional": {"eq": "", "when": "", "show": ""},
+                "validate": {
+                    "customPrivate": false,
+                    "custom": "",
+                    "pattern": "",
+                    "maxLength": "",
+                    "minLength": "",
+                    "required": false
+                },
+                "persistent": true,
+                "unique": false,
+                "protected": false,
+                "defaultValue": "",
+                "multiple": false,
+                "suffix": "",
+                "prefix": "",
+                "placeholder": "Enter your last name",
+                "key": "lastName",
+                "label": "Last Name",
+                "inputMask": "",
+                "inputType": "text",
+                "tableView": true,
+                "input": true
+            }, {
+                "lockKey": true,
+                "conditional": {"eq": "", "when": null, "show": ""},
+                "type": "checkbox",
+                "validate": {"required": false},
+                "persistent": true,
+                "protected": false,
+                "defaultValue": false,
+                "key": "havePhoneNumber",
+                "label": "Do you have a phone number?",
+                "hideLabel": true,
+                "tableView": true,
+                "inputType": "checkbox",
+                "input": true
+            }, {
+                "conditional": {"eq": "true", "when": "havePhoneNumber", "show": "true"},
+                "type": "phoneNumber",
+                "validate": {"required": false},
+                "defaultValue": "",
+                "persistent": true,
+                "unique": false,
+                "protected": false,
+                "multiple": false,
+                "suffix": "",
+                "prefix": "",
+                "placeholder": "",
+                "key": "phoneNumber",
+                "label": "Phone Number",
+                "inputMask": "(999) 999-9999",
+                "tableView": true,
+                "input": true
+            }]
+        },
+        "created": "2016-07-27T01:57:52.976Z", "revisions": "", "_vid": 0, "_id": "57981520ff9b236800b09b31",
+        "machineName": "pjmfogrfqptslvi:testForm", "modified": "2016-08-09T02:10:03.990Z", "title": "Test Form",
+        "display": "form", "name": "testForm", "path": "test", "project": "579814a4ff9b236800b09b22"
+    }
+}'></formio>
+
+        <formio [form]='{
+  "components": [
+    {
+      "label": "Children",
+        "key": "children",
+        "type": "datagrid",
+        "input": "true",
+        "components": [
+        {
+        "type": "panel",
+        "label": "User Information",
+        "key": "userinfo",
+        "components": [
+        {
+        "label": "First Name",
+        "key": "firstName",
+        "type": "textfield",
+        "input": true
+        },
+        {
+        "label": "Last Name",
+        "key": "lastName",
+        "type": "textfield",
+        "input": true
+        },
+        {
+         "type":"radio",
+         "defaultValue":2,
+         "values":[
+            {
+               "shortcut":"",
+               "label":"One",
+               "value":"1"
+            },
+            {
+               "shortcut":"",
+               "label":"Two",
+               "value":"2"
+            }
+         ],
+         "key":"test",
+         "label":"Test",
+         "inputType":"radio",
+         "tableView":true,
+         "input":true
+      },
+        {
+        "label": "Gender",
+        "key": "gender",
+        "type": "radio",
+        "inputType": "radio",
+        "input": true,
+        "values": [
+        {
+        "label": "Физическое лицо",
+        "value": "1"
+        },
+        {
+        "label": "Юридическое лицо",
+        "value": "2"
+        }
+        ]
+        },
+        {
+        "type": "form",
+    "tags": [
+        "common",
+        "info"
+    ],
+    "access": [
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939828",
+                "5a82ed0395d7d02f30939829",
+                "5a82ed0395d7d02f3093982a"
+            ],
+            "type": "read_all"
+        }
+    ],
+    "submissionAccess": [
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "create_own"
+        },
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "read_own"
+        },
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "update_own"
+        },
+        {
+            "roles": [
+                "5a82ed0395d7d02f30939829"
+            ],
+            "type": "delete_own"
+        }
+    ],
+    "owner": "5a82ed4095d7d02f30939836",
+    "components": [
+        {
+            "clearOnHide": false,
+            "input": false,
+            "key": "table",
+            "numRows": 3,
+            "numCols": 2,
+            "rows": [
+                [
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "text",
+                                "inputMask": "",
+                                "label": "Фамилия:",
+                                "key": "table2",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": true,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "custom": "",
+                                    "customPrivate": false
+                                },
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "type": "textfield",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "properties": {
+                                    "": ""
+                                },
+                                "isNew": false
+                            }
+                        ]
+                    },
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "number",
+                                "label": "СНИЛС:",
+                                "key": "table5",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "defaultValue": "",
+                                "protected": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": false,
+                                    "min": "",
+                                    "max": "",
+                                    "step": "any",
+                                    "integer": "",
+                                    "multiple": "",
+                                    "custom": ""
+                                },
+                                "type": "number",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "text",
+                                "inputMask": "",
+                                "label": "Имя:",
+                                "key": "table3",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": true,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "custom": "",
+                                    "customPrivate": false
+                                },
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "type": "textfield",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "tel",
+                                "inputMask": "(999) 999-9999",
+                                "label": "Контактный телефон:",
+                                "key": "table6",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "defaultValue": "",
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": true,
+                                    "customMessage": "Необходимо заполнить"
+                                },
+                                "type": "phoneNumber",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "text",
+                                "inputMask": "",
+                                "label": "Отчество:",
+                                "key": "table4",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "multiple": false,
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "validate": {
+                                    "required": false,
+                                    "minLength": "",
+                                    "maxLength": "",
+                                    "pattern": "",
+                                    "custom": "",
+                                    "customPrivate": false
+                                },
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "type": "textfield",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "properties": {
+                                    "": ""
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "components": [
+                            {
+                                "input": true,
+                                "tableView": true,
+                                "inputType": "email",
+                                "label": "Адрес электронной почты:",
+                                "key": "table7",
+                                "placeholder": "",
+                                "prefix": "",
+                                "suffix": "",
+                                "defaultValue": "",
+                                "protected": false,
+                                "unique": false,
+                                "persistent": true,
+                                "hidden": false,
+                                "clearOnHide": true,
+                                "kickbox": {
+                                    "enabled": false
+                                },
+                                "type": "email",
+                                "hideLabel": false,
+                                "labelPosition": "top",
+                                "tags": [],
+                                "conditional": {
+                                    "show": "",
+                                    "when": null,
+                                    "eq": ""
+                                },
+                                "properties": {
+                                    "": ""
+                                },
+                                "validate": {
+                                    "customMessage": "Необходимо заполнить"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            ],
+            "header": [],
+            "caption": "",
+            "striped": false,
+            "bordered": false,
+            "hover": false,
+            "condensed": true,
+            "tableView": false,
+            "type": "table",
+            "hideLabel": false,
+            "tags": [],
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "properties": {
+                "": ""
+            }
+        },
+        {
+            "input": true,
+            "label": "Следующий шаг",
+            "tableView": false,
+            "key": "submit",
+            "size": "md",
+            "leftIcon": "fa fa-plus",
+            "rightIcon": "",
+            "block": false,
+            "action": "submit",
+            "disableOnInvalid": false,
+            "theme": "primary",
+            "type": "button",
+            "hideLabel": false,
+            "tags": [],
+            "conditional": {
+                "show": "",
+                "when": null,
+                "eq": ""
+            },
+            "properties": {
+                "": ""
+            },
+            "style": {
+                "margin-left": "775px"
+            }
+        }
+    ],
+    "created": "2018-02-14T05:43:09.148Z",
+    "_id": "5a83cc6d40a1bc38b4d97a2b",
+    "display": "form",
+    "title": "info",
+    "name": "info",
+    "path": "info",
+    "modified": "2018-02-14T07:41:51.262Z",
+    "machineName": "info",
+        "conditional": {
+        "eq": "1",
+        "when": "gender",
+        "show": true
+        }
+        },
+        {
+            "label": "Банковские реквизиты",
+            "key": "firstName",
+            "type": "textfield",
+            "input": true,
+            "conditional": {
+            "eq": "2",
+            "when": "gender",
+            "show": true
+            }
+        }
+        ]
+        }
+        ]
+        }
+        ]
+        }'></formio>
+
+        <formio [form]='{
+    "components": [{
+        "type": "panel",
+        "title": "Страница 1",
+        "components": [{
+            "input": true,
+            "tableView": true,
+            "inputType": "radio",
+            "label": "Radio Component",
+            "key": "radioComponent",
+            "values": [{"value": "one", "label": "one"}, {"value": "two", "label": "two"}, {
+                "value": "three",
+                "label": "three"
+            }],
+            "defaultValue": "",
+            "protected": false,
+            "persistent": true,
+            "hidden": false,
+            "clearOnHide": true,
+            "validate": {"required": false, "custom": "", "customPrivate": false},
+            "type": "radio",
+            "tags": [],
+            "conditional": {"show": "", "when": null, "eq": ""}
+        }, {
+            "input": true,
+            "inputType": "checkbox",
+            "tableView": true,
+            "hideLabel": true,
+            "label": "Check Box Component",
+            "datagridLabel": true,
+            "key": "checkBoxComponent",
+            "defaultValue": false,
+            "protected": false,
+            "persistent": true,
+            "hidden": false,
+            "name": "",
+            "value": "",
+            "clearOnHide": true,
+            "validate": {"required": false},
+            "type": "checkbox",
+            "tags": [],
+            "conditional": {"show": "", "when": null, "eq": ""}
+        }],
+        "input": false,
+        "key": "page1",
+        "theme": "default"
+    }, {
+        "type": "panel",
+        "title": "Страница 2",
+        "isNew": true,
+        "components": [{
+            "input": true,
+            "tableView": true,
+            "label": "Select Boxes Component",
+            "key": "selectBoxesComponent",
+            "values": [{"value": "option1", "label": "Option 1"}, {
+                "value": "option2",
+                "label": "Option 2"
+            }, {"value": "option3", "label": "Option 3"}],
+            "inline": false,
+            "protected": false,
+            "persistent": true,
+            "hidden": false,
+            "clearOnHide": true,
+            "validate": {"required": false},
+            "type": "selectboxes",
+            "conditional": {"show": "", "when": null, "eq": ""}
+        }],
+        "input": false,
+        "key": "page2",
+        "theme": "default"
+    }], "display": "wizard", "page": 1, "numPages": 2
+}'></formio>
+
+        <formio [form]='{
+  components: [
+    {
+      "type": "select",
+        "label": "Make",
+        "key": "make",
+        "placeholder": "Select your make",
+        "dataSrc": "values",
+        "data": {
+        "values": [
+        {
+        "value": "chevrolet",
+        "label": "Chevy"
+        },
+        {
+        "value": "honda",
+        "label": "Honda"
+        },
+        {
+        "label": "Ford",
+        "value": "ford"
+        },
+        {
+        "label": "Toyota",
+        "value": "toyota"
+        },
+        {
+        "label": "Honda",
+        "value": "honda"
+        }
+        ]
+        }
+        },
+        {
+        "type": "select",
+        "label": "Model",
+        "key": "model",
+        "placeholder": "Select your model",
+        "dataSrc": "url",
+        "data": {
+        "url": "https://vpic.nhtsa.dot.gov/api/vehicles/getmodelsformake/{ data.make }?format=json"
+        },
+        "valueProperty": "Model_Name",
+        "template": "<span>{ item.Model_Name }</span>",
+        "refreshOn": "make",
+        "selectValues": "Results"
+        }
+        ]
+        }'></formio>
+
+        <formio [form]='{
+    "type": "resource",
+    "tags": [],
+    "access": [
+        {
+            "roles": [
+                "5a86a294fc5efa000178211b",
+                "5a86a294fc5efa000178211c",
+                "5a86a295fc5efa000178211d",
+                "5a86a295fc5efa000178211e"
+            ],
+            "type": "read_all"
+        }
+    ],
+    "submissionAccess": [
+        {
+            "roles": [
+                "5a86a294fc5efa000178211b"
+            ],
+            "type": "create_all"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211b",
+                "5a86a295fc5efa000178211e"
+            ],
+            "type": "read_all"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211b",
+                "5a86a295fc5efa000178211e"
+            ],
+            "type": "update_all"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211b",
+                "5a86a295fc5efa000178211e"
+            ],
+            "type": "delete_all"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211c"
+            ],
+            "type": "create_own"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211c"
+            ],
+            "type": "read_own"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211c"
+            ],
+            "type": "update_own"
+        },
+        {
+            "roles": [
+                "5a86a294fc5efa000178211c"
+            ],
+            "type": "delete_own"
+        }
+    ],
+    "owner": null,
+    "components": [
+        {
+            "type": "datetime",
+            "validate": {
+                "custom": "",
+                "required": true
+            },
+            "persistent": true,
+            "protected": false,
+            "timePicker": {
+                "arrowkeys": true,
+                "mousewheel": true,
+                "readonlyInput": false,
+                "showMeridian": true,
+                "minuteStep": 1,
+                "hourStep": 1
+            },
+            "datePicker": {
+                "yearRange": "20",
+                "maxMode": "year",
+                "minMode": "day",
+                "initDate": "",
+                "startingDay": 0,
+                "showWeeks": true,
+                "datepickerMode": "day"
+            },
+            "datepickerMode": "day",
+            "enableTime": true,
+            "enableDate": true,
+            "format": "yyyy-MM-dd HH:mm",
+            "placeholder": "",
+            "key": "time",
+            "label": "Time",
+            "tableView": true,
+            "input": true,
+            "isNew": false
+        },
+        {
+            "lockKey": true,
+            "conditional": {
+                "eq": "",
+                "when": null,
+                "show": false
+            },
+            "project": "5a86a294fc5efa000178211a",
+            "type": "resource",
+            "validate": {
+                "required": true
+            },
+            "persistent": true,
+            "protected": false,
+            "multiple": false,
+            "searchFields": [
+                "data.customer.data.lastName__regex"
+            ],
+            "selectFields": "",
+            "template": "<span>{ item.data.appointmentTime }</span>",
+            "defaultValue": "",
+            "resource": "5a86a296fc5efa0001782123",
+            "placeholder": "Appointment",
+            "key": "appointment",
+            "label": "Appointment",
+            "tableView": true,
+            "input": true,
+            "defaultPermission": ""
+        },
+        {
+            "input": true,
+            "tableView": true,
+            "key": "location",
+            "label": "Location",
+            "protected": false,
+            "unique": false,
+            "persistent": true,
+            "type": "hidden",
+            "conditional": {
+                "show": false,
+                "when": null,
+                "eq": ""
+            },
+            "isNew": false
+        },
+        {
+            "type": "select",
+            "validate": {
+                "required": true
+            },
+            "persistent": true,
+            "unique": false,
+            "protected": false,
+            "multiple": false,
+            "template": "<span>{ item.label }</span>",
+            "defaultValue": "",
+            "valueProperty": "",
+            "dataSrc": "values",
+            "data": {
+                "url": "",
+                "json": "",
+                "values": [
+                    {
+                        "label": "Start date",
+                        "value": "startDate"
+                    },
+                    {
+                        "label": "On Route to Customer",
+                        "value": "onroute"
+                    },
+                    {
+                        "label": "Job Start",
+                        "value": "jobstart"
+                    },
+                    {
+                        "label": "Job End",
+                        "value": "jobend"
+                    },
+                    {
+                        "label": "Lunch Start",
+                        "value": "lunchstart"
+                    },
+                    {
+                        "label": "Lunch End",
+                        "value": "lunchend"
+                    },
+                    {
+                        "label": "End of Day",
+                        "value": "endofday"
+                    },
+                    {
+                        "label": "Appointments",
+                        "value": "appointments"
+                    }
+                ]
+            },
+            "placeholder": "",
+            "key": "activity",
+            "label": "Activity",
+            "tableView": true,
+            "input": true,
+            "refreshOn": "",
+            "filter": "",
+            "authenticate": false
+        },
+        {
+            "type": "button",
+            "theme": "primary",
+            "disableOnInvalid": true,
+            "action": "submit",
+            "block": false,
+            "rightIcon": "",
+            "leftIcon": "",
+            "size": "md",
+            "key": "submit",
+            "tableView": false,
+            "label": "Submit",
+            "input": true
+        }
+    ],
+    "created": "2018-02-16T09:21:26.709Z",
+    "revisions": "",
+    "_vid": 0,
+    "_id": "5a86a296fc5efa0001782124",
+    "title": "Time Clock",
+    "name": "timeclock",
+    "path": "timeclock",
+    "display": "form",
+    "machineName": "ujrdzahdgfgqeau:timeClock",
+    "project": "5a86a294fc5efa000178211a",
+    "modified": "2018-02-16T09:21:26.753Z"
+}'></formio>
+
+        <formio [form]='{
+        "type": "datetime",
+        "key": "dueDate",
+        "label": "Due Date",
+        "placeholder": "Enter Due Date",
+        "datepickerMode": "day",
+        "enableDate": true,
+        "enableTime": true,
+        "format": "yyyy-MM-dd hh:mm a",
+        "input": true,
+        "tooltip": "Enter date the item is <strong>due</strong>",
+        "description": "Enter <strong>Due Date</strong>"
+        }'></formio>
+
+
+        <div [ngSwitch]="isAuthenticated()">
+            <div class="alert alert-success" *ngSwitchCase="true">
+                <span *ngIf="account" jhiTranslate="home.logged.message"
+                    translateValues="{username: '{{account.login}}'}"> You are logged in as user "{{account.login}}". </span>
+            </div>
+
+            <div class="alert alert-warning" *ngSwitchCase="false">
+                <span jhiTranslate="global.messages.info.authenticated.prefix">If you want to </span>
+                <a class="alert-link" (click)="login()" jhiTranslate="global.messages.info.authenticated.link">sign in</a><span jhiTranslate="global.messages.info.authenticated.suffix">, you can try the default accounts:<br/>- Administrator (login="admin" and password="admin") <br/>- User (login="user" and password="user").</span>
+            </div>
+            <div class="alert alert-warning" *ngSwitchCase="false">
+                <span jhiTranslate="global.messages.info.register.noaccount">You don't have an account yet?</span>
+                <a class="alert-link" routerLink="register" jhiTranslate="global.messages.info.register.link">Register a new account</a>
+            </div>
+        </div>
+    </div>
+</div>
